@@ -1,0 +1,1 @@
+<div class = {{ $isActive ? 'active' : '' }}> isActive {{$isActive}} </div>
