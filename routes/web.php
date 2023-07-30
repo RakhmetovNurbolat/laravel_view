@@ -65,3 +65,12 @@ Route::view('/readonly', 'readonly');
 Route::view('/main', 'required');
 //25
 Route::view('/main', 'main');
+//28
+Route::get('/users', function(){
+    $users =['Alex', 'Job', 'Bob'];
+    return view('users', ['users' => $users]);
+});
+
+Route::view('/layout', 'layout');
+Route::view('/yield', 'yield');
+Route::view('/section', 'section');
